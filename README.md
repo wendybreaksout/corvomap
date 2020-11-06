@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: wkempferjr, jnobles
-Donate link: http://guestaba.com/donate
+Contributors: wendybreaksout
+Donate link: 
 Tags: crowd sourcing, crowdmap, crowd source map
 Requires at least: 4.0
 Tested up to: 4.3.1
