@@ -1,0 +1,555 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ *
+ *
+ */
+
+
+.maps_rate_item {
+	margin-bottom: 30px;
+}
+
+.map_rates_range {
+	font-weight: bold;
+}
+
+.map_proposal_list {
+	list-style-type: none ;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+
+.maps_proposal_list li {
+	float: left;
+	display: inline;
+	width: 175px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background: #efefef;
+}
+
+#map_bottom_container .cmp_row {
+	margin-left: 0;
+}
+
+
+
+.cmp_widget {
+	margin-bottom: 20px;
+	overflow: visible;
+}
+
+#maps_pt_wrapper {
+	margin-bottom: 20px;
+}
+
+
+h3.maps_price_title {
+    margin-top: 10px ;
+    margin-bottom: 10px;
+	font-weight: bold ;
+}
+
+.maps_price_date {
+	font-style: italic;
+}
+
+.maps_price {
+	font-weight: bold ;
+}
+
+.maps_proposal_list {
+	margin-left: 0;
+}
+
+.map_third_widget_area {
+	clear: both;
+}
+
+#map_bottom_container {
+	padding: 0 .5em;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
+.maps_img_link {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 0;
+	padding: 66% 0 0 0;
+	overflow: hidden;
+
+}
+
+.map-thumbnail {
+	position: absolute;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.maps_slider_container {
+	max-width: 960px;
+	width: 100% !important;
+	heigth: 100% !important;
+	margin-bottom: 20px;
+}
+
+
+#maps_rates .row {
+	max-width: initial ;
+}
+
+
+
+.card-divider {
+	background: #ededed;
+	padding: 1em;
+}
+
+
+.card-section {
+	padding: 1em;
+	overflow: initial;
+}
+
+
+.card {
+	margin-bottom: 30px;
+	border: 1px #cccccc solid;
+}
+
+
+
+
+
+/* grid CSS  */
+
+#maps_rates *,
+#maps_rates *:before,
+#maps_rates *:after {
+  box-sizing: border-box;
+}
+
+
+#maps_rates img {
+	border-radius: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+}
+
+
+
+#map-post-title {
+	display: inline-block;
+}
+
+.back-link {
+	padding-left: 3em;
+}
+
+
+.crowd-map-container {
+	width: 100%;
+	height: auto;
+	position: relative;
+    display: inline-block;
+
+}
+
+.crowd-map-address-text {
+	margin-bottom: .2em;
+	line-height: 1.2;
+}
+/*TODO: Crowdmap geometry should be driven by metadata values. */
+.crowd-map {
+	width: 100%;
+	height: 500px;
+    display: inline-block;
+}
+
+.crowd-map-container .crowd-map-header {
+
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px #555555 solid;
+		border-top: 1px solid #d8d8d8;
+		border-left: 1px solid #d8d8d8;
+		border-right: 1px solid #d8d8d8;
+
+
+}
+.crowd-map-container .crowd-map-title {
+	margin: 0;
+	padding: .25em;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1.5em;
+}
+
+.crowd-map-mode-label, .crowd-map-layers-label {
+    display: inline;
+    font-weight: bold;
+		margin-left: 1em;
+}
+.crowd-map-form-container {
+	width: 250px;
+	height: 380px;
+	z-index: 1000;
+	background-color: #ffffff;
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	padding: 15px 15px 15px 15px;
+	text-align: left;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+	display: none;
+}
+.crowd-map-form-container .form-group {
+    margin-bottom: 10px;
+}
+
+.proposal-submit-button {
+    text-align: center;
+}
+
+.crowd-map-positioning {
+    margin-bottom: 5px;
+}
+
+.proposal-title {
+	width: 100%;
+}
+
+.proposal-description {
+	width: 100%;
+	min-height: 100px;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.proposal-form-button {
+	margin-top: 10px;
+}
+
+.proposal-form-dismiss {
+    width: 1em;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.proposal-form-dismiss i:hover {
+    background: #cccccc;
+    color: #ffffff;
+}
+
+
+.proposal-type-label {
+	text-align: left;
+	margin: 10px 0 5px;
+}
+
+.map-icon-label .map-icon {
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 48px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.proposal-info {
+    max-width: 250px;
+}
+
+#proposal-title {
+    text-align: left;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+#proposal-type {
+    display: inline-block;
+    margin: 8px 0 3px 5px;
+}
+
+/* Set height of proposal form select */
+.proposal-type {
+	height: auto;
+}
+
+
+#proposal-type-icon {
+    margin: 0;
+}
+
+.proposal-comment-form {
+    text-align: center;
+}
+
+#proposal-comments h4 {
+    margin: 10px 0;
+}
+
+.proposal-comment-button {
+    margin-top: 10px ;
+}
+
+.proposal-info .proposal-author {
+    margin-bottom: 0;
+}
+
+#proposal-comments .proposal-comments-list {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 23px;
+}
+
+#proposal-submit,
+.crowd-map-form-container input.proposal-title,
+.crowd-map-form-container textarea.proposal-description {
+    margin-bottom: 5px;
+}
+
+#map-activity-list {
+    list-style: none;
+    margin: 0;
+}
+
+
+
+.map-activity-avatar {
+    float: left;
+}
+
+
+#map-activity-list .map-activity-avatar img {
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+.map-activity-shortcode .map-activity-title {
+    margin: 5px 5px 5px 15px;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+.map-activity-toggle {
+	display: inline;
+}
+
+/* If diplay: inline, shows 'Map Activities' */
+.map-activity-title {
+	display: none;
+}
+
+
+.map-activity-shortcode {
+    width: 25%;
+    min-width: 12em;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #f7f7f7;
+    border-left: 1px solid #d8d8d8;
+}
+
+.map-with-activity {
+    position: relative;
+		background: #f7f7f7;
+		border: 1px solid #d8d8d8;
+}
+
+.map-activity-listing {
+    overflow: auto;
+    height: 100%
+
+}
+
+/*  Change this to none, map-activity-title to inline to display title instead */
+.map-activity-mobile-title,
+.map-activity-mobile-icon {
+    display: inline ;
+    margin-right: .2em;
+}
+
+
+
+
+.map-activity-title-container {
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px #d8d8d8 solid;
+    background: #fff;
+    height: 2.2em;
+}
+
+.map-activity-item-container {
+    padding: 5px;
+    border-bottom: 1px #dddddd solid;
+    font-size: 14px;
+
+}
+
+.map-activity-date, {
+	padding-left: .5em;
+}
+
+.map-activity-type {
+	font-weight: 600;
+}
+
+
+.support-container {
+	text-align: left;
+    margin-bottom: 10px;
+}
+
+.support-count {
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.crowd-map-control-panel {
+	font-size: .75em;
+	padding: .30em;
+    text-align: left;
+    background: #f7f7f7;
+
+}
+.crowd-map-layer-controls .crowd-map-layers-checkbox,
+.crowd-map-controls .crowd-map-mode-radio {
+    margin: 0 .15em 0 .75em;
+}
+
+.crowd-map-controls, .crowd-map-layer-controls {
+	display: inline-block;
+}
+
+.crowd-map-controls {
+	margin-right: .75em;
+}
+
+.crowd-map-post-content {
+    margin-bottom: 1em;
+}
+
+footer.entry-footer {
+	border: 1px solid #d8d8d8;
+}
+
+.map-with-activity .crowd-map img {
+	max-width: none;
+}
+
+@media screen and (max-width: 768px) {
+    .map-activity-mobile-title,
+    .map-activity-mobile-icon {
+        display: inline;
+    }
+    .map-activity-title {
+        display: none;
+    }
+    .map-activity-title-container {
+        text-align: center ;
+    }
+    .map-activity-shortcode {
+        min-width: 12em;
+    }
+    .crowd-map-container .crowd-map-title {
+        font-size: 1em;
+    }
+
+}
+#cmp-status-message-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#cmp-status-message-container p {
+	font-size: .9em;
+	color: #ff0000;
+    margin-bottom: 2px;
+}
+
+.cmp-proposal-status-close {
+    color: #000000;
+}
+
+.cmp-proposal-display {
+    width: 250px;
+    height: 280px;
+}
+
+.cmp-proposal-display ul.nav {
+    margin-bottom: 5px;
+}
+
+.cmp-proposal-display ul li a {
+    font-size: 1.2em;
+}
+
+.cmp-info-icon {
+    display: none;
+    width: 1em;
+    position: absolute;
+    top: 3px;
+    right: 8px;
+}
+
+.cmp-map-icon {
+    display: none;
+    width: 1em;
+    position: absolute;
+    top: 3px;
+    right: 8px;
+}
+
+
+.cmp-to-top-link {
+    display: none;
+    font-size: 2em;
+    position: fixed;
+    top: 250px;
+    left: 8px;
+    opacity: 0.6;
+}
+
+.cmp-mobile-title {
+    display: none;
+}
+
+.proposal-page-link {
+    margin-top: 3px;
+    font-size: .9em ;
+}

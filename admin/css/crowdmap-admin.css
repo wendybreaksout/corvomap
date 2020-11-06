@@ -1,0 +1,330 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ *
+ */
+
+
+.adm_proposal {
+	background: #fafafa;
+	padding: 0 5px 5px 5px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	margin-bottom: 15px;
+}
+
+.ot_setting_body_done {
+	float: right;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#proposal_panel li {
+	font-weight: bold;
+}
+
+#proposal {
+	list-style-image: initial;
+}
+
+
+#proposal > p {
+	margin-left: 10px;
+}
+
+.cmp_map_price {
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.gst_mb_section {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.gst-slider-thumbnail {
+	float: none;
+	margin-right: 10px;
+	width: auto;
+	height: 110px;
+}
+
+.gst-sort-edit-image {
+	margin: 15px 0;
+	padding: 5px;
+
+}
+
+.gst_mb_label {
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.gst_settings_container {
+	margin-top: 15px;
+	padding-top: 15px;
+}
+
+.gst_mb_section {
+	border-bottom: solid 1px #dddddd;
+}
+
+.gst_mb_select {
+	margin-bottom: 10px ;
+}
+
+.ui-sortable li.ui-state-default {
+	cursor: move;
+}
+
+.gst-sort-edit-image {
+	padding: 5px;
+	background: #fafafa;
+	position: relative;
+}
+.gst_slide_desc_input {
+	margin-top: 5px;
+	width: 100%;
+}
+.gst_slide_title_input {
+	width: 100%;
+	margin-top: 0;
+}
+.gst_img_input_label_title {
+	margin-top: 10px;
+}
+.gst_image_url_target {
+	margin-top: 0;
+	width: 100%;
+}
+
+
+.gst-sort-edit-image .gst-sort-edit-delete {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.gst-sort-edit-image .gst-sort-edit-image-upload {
+	position: absolute;
+	top: 5px;
+	right: 50px;
+}
+
+.gst-sort-edit-proposal-type {
+	padding: 0 5px 10px 10px;
+	background: #fafafa;
+	position: relative;
+}
+
+.gst-sort-edit-proposal-type .gst-sort-edit-delete {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.gst_price_input {
+	width: 4em;
+	margin-left: 2px;
+	margin-right: 7px;
+}
+
+.meta_proposal_list_feedback {
+	color: #ff0000;
+}
+
+
+
+
+
+#meta_map_slogan,
+#meta_map_desc,
+#meta_map_excerpt,
+#meta_proposal_desc {
+	width: 100%;
+}
+
+#cmp-settings-container {
+	width: 55%;
+	float:left;
+
+}
+
+#cmp-settings-info-container {
+	width: 40%;
+	display: inline-block;
+
+}
+
+#cmp-donate {
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 782px ) {
+
+	#cmp-settings-container {
+		width: 100%;
+		float: none;
+
+	}
+
+	#cmp-settings-info-container {
+		width: 100%;
+	}
+}
+
+
+/* Character counter settings for map excerpt */
+.gst-excerpt-over {
+	color: red;
+}
+
+/* UI CSS Changes = James */
+
+.gst_mb_select select, .gst_mb_label label, .adm_proposal, .wp-editor-container, .gst_mb_textarea, .gst_mb_numberinput, .gst_mb_radio, .gst_mb_textinput,
+ .slider-edit-list, .proposal-edit-list, .meta_proposal_list_feedback, #cmp-settings-container
+  {
+  	margin-left: 18px;
+
+  	 }
+
+.gst_mb_section, .settings-header {
+	color: #0a1194;
+	border: #ccc;
+	padding-bottom: 5px;
+}
+
+.adm_proposal { padding-right: 15px;}
+
+.adm_proposal, .gst_mb_textarea, .slider-edit-list, .proposal-edit-list { max-width: 75%;}
+
+#maps_cpt_meta_box .hndle span, #proposals_cpt_meta_box .hndle span, #cmp-settings-container h3 {
+	color: #0a1194;
+	font-size: 125%;
+
+}
+
+.meta_proposal_list_feedback p {
+	padding: 5px;
+}
+
+.gst_proposal_input_label {
+    font-size: 125%;
+    margin-right: 5px;
+    }
+
+input.gst_input_group_item.gst_clear_input_target.gst_price_title_input.gst_proposal_input.meta_proposal_list_list_item {
+	margin-left: 48px;
+    margin-bottom: 10px;
+}
+
+input.gst_input_group_item.gst_date_input.gst_proposal_input.gst_start_date.meta_proposal_list_list_item.hasDatepicker {
+	 margin-bottom: 20px;
+	 margin-right: 5px;
+
+}
+
+input.gst_input_group_item.gst_clear_input_target.gst_price_input.gst_proposal_input.meta_proposal_list_list_item {
+	margin-top: 10px;
+}
+
+input.gst_input_group_item.gst_clear_input_target.gst_price_input.gst_proposal_input.meta_proposal_list_list_item {
+	margin-right: 12px;
+}
+
+ input.meta_map_slider_list_item {
+	margin-bottom: 10px;
+    margin-top: 3px;
+
+   }
+
+   input.gst_input_group_item {
+   	margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 3px;
+   }
+
+
+ /* Modified Button Styles from Foundation */
+
+button.gst-sort-edit-image-upload, button.gst-sort-edit-proposal-add, button.gst-sort-edit-image-add, button.gst-sort-edit-add {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 .625rem;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  font-size: .75rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: white;
+  transition: background-color 300ms ease-out;
+  margin-left: 18px;
+  }
+
+
+button.gst-sort-edit-delete {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 .625rem;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  font-size: .75rem;
+  background-color: #f04124;
+  border-color: #cf2a0e;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+
+#meta_proposal_type_list .wp-picker-container {
+	display: inherit;
+}
+
+.cmp-report-map-select-container,
+.cmp-report-reset-btn-container,
+.cmp-report-export-btn-container {
+    display: inline;
+}
+
+.cmp-report-reset-btn-container,
+.cmp-report-export-btn-container {
+    margin-left: 5px;
+}
+
+#cmp-report-export-btn,
+#cmp-report-reset-btn {
+    margin-top: 8px;
+}
+
+#cmp-spinner {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: -10px;
+}
