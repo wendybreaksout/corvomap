@@ -8,7 +8,7 @@
  *
  * @package    CrowdMap
  * @subpackage CrowdMap/admin
- * @author     Wes Kempfer <wkempferjr@tnotw.com>
+ * @author     Wendy Emerson <wendybreaksout@gmail.com>
  */
 class CrowdMap_Admin {
 

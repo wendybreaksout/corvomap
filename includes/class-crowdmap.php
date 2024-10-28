@@ -25,7 +25,7 @@
  * @since      1.0.0
  * @package    CrowdMap
  * @subpackage CrowdMap/includes
- * @author     Wes Kempfer <wkempferjr@tnotw.com>
+ * @author     Wendy Emerson <wendybreaksout@gmail.com>
  */
 class CrowdMap {
 

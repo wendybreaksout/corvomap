@@ -7,7 +7,7 @@
  * @since      1.0.0
  * @package    CrowdMap
  * @subpackage CrowdMap/includes
- * @author     Wes Kempfer <wkempferjr@tnotw.com>
+ * @author     Wendy Emerson <wendybreaksout@gmail.com>
  */
 
 class CrowdMap_Public_Ajax_Controller {
@@ -45,7 +45,7 @@ class CrowdMap_Public_Ajax_Controller {
 					}
 					$output = self::publish_proposal();
 					if ( $output === false ) {
-						throw new Exception(_e('Error occurred attempting to publish proposal.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Error occurred attempting to publish proposal.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					break;
 
@@ -53,44 +53,44 @@ class CrowdMap_Public_Ajax_Controller {
 				case 'post_comment':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL'] )&& !isset( $_REQUEST['proposalID'] ) ) {
-						throw new Exception(_e('Invalid post comment request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid post comment request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::post_comment();
 					if ( $output === false ) {
-						throw new Exception(_e('Error occurred attempting to post comment.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Error occurred attempting to post comment.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					break;
 
 				case 'post_support':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL'] )&& !isset( $_REQUEST['proposalID'] ) ) {
-						throw new Exception(_e('Invalid post support request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid post support request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::post_support();
 					if ( $output === false ) {
-						throw new Exception(_e('Error occurred attempting to post support.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Error occurred attempting to post support.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					break;
 
 				case 'get_comments':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL'] )&& !isset( $_REQUEST['proposalID'] ) ) {
-						throw new Exception(_e('Invalid get comments request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get comments request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::post_comment();
 					if ( $output === false ) {
-						throw new Exception(_e('Error occurred attempting to get comments.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Error occurred attempting to get comments.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					break;
 
 				case 'get_map_activity':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL'] )&& !isset( $_REQUEST['mapID'] ) ) {
-						throw new Exception(_e('Invalid get map activity request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get map activity request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::get_map_activity();
 					if ( $output === false ) {
-						throw new Exception(_e('Error occurred attempting to get map activity.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Error occurred attempting to get map activity.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					break;
 
@@ -100,11 +100,11 @@ class CrowdMap_Public_Ajax_Controller {
 					// to pass this information.
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL'] )  ) {
-						throw new Exception(_e('Invalid maps slider request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid maps slider request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::get_geocoding();
 					if ( $output === false ) {
-						throw new Exception(_e('Could not geocoding for address.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Could not geocoding for address.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 
 					break;
@@ -113,7 +113,7 @@ class CrowdMap_Public_Ajax_Controller {
 				case 'get_proposal':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['documentURL']) || $_REQUEST['proposalID'] == 'undefined' ) {
-						throw new Exception(_e('Invalid get get proposal request.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get get proposal request.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 
 					$output = self::get_proposal( );
@@ -125,11 +125,11 @@ class CrowdMap_Public_Ajax_Controller {
 				case 'get_proposals':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['mapID']) || $_REQUEST['mapID'] == 'undefined' ) {
-						throw new Exception(_e('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 
 					if ( !isset( $_REQUEST['since']) || $_REQUEST['since'] == 'undefined' ) {
-						throw new Exception(_e('Invalid get proposals request. The "since" param is not set', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get proposals request. The "since" param is not set', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 					$output = self::get_proposals( $_REQUEST['mapID'], $_REQUEST['since']  );
 					if ( $output === false ) {
@@ -140,7 +140,7 @@ class CrowdMap_Public_Ajax_Controller {
 				case 'get_proposals_ranked':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['mapID']) || $_REQUEST['mapID'] == 'undefined' ) {
-						throw new Exception(_e('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 
 					$output = self::get_proposals_ranked( $_REQUEST['mapID'] );
@@ -153,7 +153,7 @@ class CrowdMap_Public_Ajax_Controller {
 				case 'get_proposals_export':
 					// If  not set, consider it an invalid request.
 					if ( !isset( $_REQUEST['mapID']) || $_REQUEST['mapID'] == 'undefined' ) {
-						throw new Exception(_e('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
+						throw new Exception(__('Invalid get proposals request. No mapID.', GUESTABA_CMP_TEXTDOMAIN ) );
 					}
 
 					$output = self::get_proposals_export( $_REQUEST['mapID'] );
